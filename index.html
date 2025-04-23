@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#151515" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>2048 Pokemon | Play Pokémon 2048</title>
+  <meta name="description" content="Play Pokémon 2048, the ultimate puzzle game that combines the fun of 2048 with your favorite Pokemon 2048 characters. Merge tiles, evolve Pokémon, and reach legendary levels!">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="https://kaloodinaz.github.io/2048-reverse/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="https://kaloodinaz.github.io/2048-reverse/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script>
+    if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+    .then(registration => {console.log('Service Worker registered successfully:', registration);})
+    .catch(error => {console.log('Error in Service Worker registration:', error);});});}
+    </script>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Pokémon 2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Combine the Pokémon to get <strong>Mewtwo!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">I want to be the very best!</a>
+          <a class="retry-button">Run to Pokécenter!</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same pokémon touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <div class="block block-728"><script type="text/javascript">
+     atOptions = {
+       'key' : 'd1d26e15f7c349fd8e403bb5ea491a31',
+       'format' : 'iframe',
+       'height' : 90,
+       'width' : 728,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/d1d26e15f7c349fd8e403bb5ea491a31/invoke.js"></script></div>
+       <div class="block block-300"><script type="text/javascript">
+     atOptions = {
+       'key' : '0fee57062f9bb330edc13a4e4349876d',
+       'format' : 'iframe',
+       'height' : 250,
+       'width' : 300,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/0fee57062f9bb330edc13a4e4349876d/invoke.js"></script></div>
+   <hr>
+   <p><strong>Pokémon 2048</strong> is a fun and addictive puzzle game that brings together the classic mechanics of <em>2048</em> with the excitement of the Pokémon universe. Instead of merging numbers, players combine Pokémon tiles to evolve them into stronger and rarer creatures, working their way up through the evolutionary line.</p>
+
+   <p>Whether you’re a fan of Pokémon or just love a good brain teaser, Pokémon 2048 offers a fresh twist on the traditional 2048 game. From Bulbasaur to Charizard, every merge brings a familiar face and a wave of nostalgia. The game maintains the simple swipe controls of the original 2048, making it easy to play but challenging to master.</p>
+
+   <h2>🎮 How to Play Pokémon 2048</h2>
+   <ul>
+     <li>Use arrow keys (or swipe on mobile) to move Pokémon tiles in four directions.</li>
+     <li>Merge two identical Pokémon to evolve them into the next stage.</li>
+     <li>Plan your moves carefully — once the board fills up, the game is over!</li>
+     <li>Your goal: reach the highest evolution and unlock the legendary Pokémon!</li>
+   </ul>
+
+   <h2>🔍 Features</h2>
+   <ul>
+     <li>Colorful Pokémon-themed graphics</li>
+     <li>Smooth animations and responsive design</li>
+     <li>Playable on desktop, tablet, and mobile browsers</li>
+     <li>Endless replayability with every game offering new challenges</li>
+   </ul>
+
+   <h2>🌟 Why You'll Love It</h2>
+   <p>This version of 2048 is not just a game; it's a tribute to Pokémon fans everywhere. Seeing your favorite Pokémon evolve with each smart move adds a layer of fun and excitement you won’t get from the regular version. The game is perfect for both casual players and puzzle enthusiasts.</p>
+
+   <h2>📱 Play Anywhere</h2>
+   <p><strong>Pokémon 2048</strong> is fully optimized for all devices, so you can enjoy it on your phone, tablet, or computer without any downloads. It’s the perfect companion for short breaks, long waits, or relaxing evenings.</p>
+
+   <p>Ready to evolve your puzzle skills? Start playing Pokémon 2048 and catch 'em all—one tile at a time!</p>
+       <hr>
+       <p><strong>2048 Pokemon</strong> is an extended version of the classic <a href="https://kaloodinaz.github.io/game/2048/" target="_blank">2048 game</a>, featuring a 4x4 grid instead of the standard 4x4 board. This variation allows for a more strategic approach to merging tiles, making it a great option for players who enjoy longer gameplay sessions.</p>
+    <hr>
+    <p>
+      This 4 x 4 fast paced version by <a target="_blank" href="https://kaloodinaz.github.io/">Kaloo Dinaz</a> was cloned from
+      the "non-official" <a target="_blank" href="https://kaloodinaz.github.io/2048-online/">2048 game</a> authored by
+      <a target="_blank" href="https://github.com/kaloodinaz/">Kaloo Dinaz</a>.
+    </p>
+  </div>
+  <script defer src="main.js"></script>
+
+</body>
+</html>
